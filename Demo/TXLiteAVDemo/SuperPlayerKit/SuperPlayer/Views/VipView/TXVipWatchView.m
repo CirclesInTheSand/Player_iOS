@@ -75,6 +75,7 @@
     [_repeatBtn.titleLabel setFont:self.textFontSize > 0 ? [UIFont systemFontOfSize:self.textFontSize] : _repeatBtn.titleLabel.font];
     
     [_openVipBtn setTitle:self.vipWatchModel.finishedWatchTitle forState:UIControlStateNormal];
+    _backBtn.hidden = self.vipWatchModel.hideBackBtn;
 }
 
 - (void)setCurrentTime:(float)currentTime {

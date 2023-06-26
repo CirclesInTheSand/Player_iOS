@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) float    canWatchTime;
 
 @property (nonatomic, copy) NSString *finishedWatchTitle;
+@property (nonatomic, assign) BOOL hideBackBtn;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 试看时间，单位是秒
 @property (nonatomic, assign) float    canWatchTime;
 
+@property (nonatomic, copy) NSString *finishedWatchTitle;
 @end
 
 NS_ASSUME_NONNULL_END

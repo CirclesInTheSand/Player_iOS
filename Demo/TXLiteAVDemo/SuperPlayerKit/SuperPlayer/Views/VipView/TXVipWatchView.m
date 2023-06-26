@@ -73,6 +73,8 @@
         make.centerY.equalTo(self.openVipBtn).offset((VIP_WATCHVIEW_MARGIN + VIP_WATCHVIEW_REPEARTBTN_HEIGHT + VIP_WATCHVIEW_REPEARTBTN_HEIGHT * 0.5) * self.scale);
     }];
     [_repeatBtn.titleLabel setFont:self.textFontSize > 0 ? [UIFont systemFontOfSize:self.textFontSize] : _repeatBtn.titleLabel.font];
+    
+    [_openVipBtn setTitle:self.vipWatchModel.finishedWatchTitle forState:UIControlStateNormal];
 }
 
 - (void)setCurrentTime:(float)currentTime {
@@ -84,7 +86,6 @@
 }
 
 #pragma mark - Private Method
-
 - (BOOL)canShowVipView:(float)currentTime {
     return (self.vipWatchModel != nil && currentTime >= self.vipWatchModel.canWatchTime) ? YES : NO;
 }
